@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Muscle Cars — Contact</title>
+  <meta name="description" content="Contact Muscle Cars for quotes, consultations, and build inquiries." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <img src="images/logo.png" alt="Muscle Cars logo" class="logo" />
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="index.html#portfolio">Portfolio</a>
+        <a class="nav-link" href="index.html#services">Services</a>
+        <a class="nav-cta" href="contact.html">Request Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="contact-intro">
+      <h1>Tell us about your car</h1>
+      <p>We'll reply within 48 hours.</p>
+    </section>
+
+    <section class="contact-form">
+      <form id="project-form" action="#" method="post" class="form" novalidate>
+        <label for="name">Name</label>
+        <input id="name" name="name" class="form-input" type="text" required />
+
+        <label for="email">Email</label>
+        <input id="email" name="email" class="form-input" type="email" required />
+
+        <label for="phone">Phone (optional)</label>
+        <input id="phone" name="phone" class="form-input" type="tel" />
+
+        <label for="car">Car Make / Model / Year</label>
+        <input id="car" name="car" class="form-input" type="text" required />
+
+        <label for="project-type">Project Type</label>
+        <select id="project-type" name="project-type" class="form-input">
+          <option>Restoration</option>
+          <option>Custom Build</option>
+          <option>Maintenance</option>
+          <option>Other</option>
+        </select>
+
+        <label for="budget">Budget Range</label>
+        <select id="budget" name="budget" class="form-input">
+          <option>&lt;$5k</option>
+          <option>$5k–$20k</option>
+          <option>$20k–$50k</option>
+          <option>$50k+</option>
+        </select>
+
+        <label for="start-date">Desired Start Date</label>
+        <input id="start-date" name="start-date" class="form-input" type="date" />
+
+        <label for="description">Project Description</label>
+        <textarea id="description" name="description" class="form-input" rows="5"></textarea>
+
+        <label for="file">Attach file (optional)</label>
+        <input id="file" name="file" class="form-input" type="file" />
+
+        <label class="checkbox-label">
+          <input type="checkbox" id="consent" name="consent" required />
+          I agree to be contacted about this project.
+        </label>
+
+        <!-- Inline CSS example on this button element -->
+        <button type="submit" class="btn btn-primary" style="background:#B71C1C; color:#fff; padding:12px 20px;">Send Request</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>Email: info@musclecars.example</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a><br />
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
