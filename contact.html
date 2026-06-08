@@ -7,10 +7,14 @@
   <meta name="description" content="Contact Muscle Cars for quotes, consultations, and build inquiries." />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <img src="images/MuscleCarLogo.png" alt="Muscle Cars logo" class="logo" />
+
+      <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+
       <nav class="main-nav" aria-label="Main navigation">
         <a class="nav-link" href="index.html">Home</a>
         <a class="nav-link" href="index.html#portfolio">Portfolio</a>
@@ -70,8 +74,10 @@
           I agree to be contacted about this project.
         </label>
 
-        <!-- Inline CSS example on this button element -->
-        <button type="submit" class="btn btn-primary" style="background:#B71C1C; color:#fff; padding:12px 20px;">Send Request</button>
+        <!-- Inline CSS requirement -->
+        <button type="submit" class="btn btn-primary" style="background:#B71C1C; color:#fff; padding:12px 20px;">
+          Send Request
+        </button>
       </form>
     </section>
   </main>
@@ -82,6 +88,7 @@
         <h4>Contact</h4>
         <p>Email: info@musclecars.example</p>
       </div>
+
       <div class="footer-col">
         <h4>Quick Links</h4>
         <a href="index.html">Home</a><br />
@@ -89,5 +96,13 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".main-nav");
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("open");
+    });
+  </script>
 </body>
 </html>

@@ -6,20 +6,25 @@
   <title>Muscle Cars — Home</title>
   <meta name="description" content="Muscle Cars: builds, restorations, and events for classic and modern muscle car fans." />
   <link rel="stylesheet" href="css/styles.css" />
-  <!-- Internal CSS example (for assignment requirement) -->
+
+  <!-- Internal CSS (assignment requirement) -->
   <style>
-    /* Internal CSS: small page-specific rule */
     .hero-sub { color: #333333; font-size: 18px; }
   </style>
 </head>
+
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <img src="images/MuscleCarLogo.png" alt="Muscle Cars logo" class="logo" />
+
+      <!-- Mobile Menu Button -->
+      <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+
       <nav class="main-nav" aria-label="Main navigation">
         <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="index.html#portfolio">Portfolio</a>
-        <a class="nav-link" href="index.html#services">Services</a>
+        <a class="nav-link" href="#portfolio">Portfolio</a>
+        <a class="nav-link" href="#services">Services</a>
         <a class="nav-link" href="contact.html">About</a>
         <a class="nav-cta" href="contact.html">Request Quote</a>
       </nav>
@@ -34,6 +39,7 @@
         <a class="btn btn-primary" href="contact.html">Request Quote</a>
         <a class="btn btn-secondary" href="#portfolio">Browse Builds</a>
       </div>
+
       <div class="hero-image">
         <img src="images/RedMuscle.png" alt="Red muscle car" />
       </div>
@@ -62,11 +68,13 @@
           <h4 class="project-title">1970 Chevelle SS Build</h4>
           <p class="project-tag">Restoration + 572 crate motor</p>
         </article>
+
         <article class="project-card">
           <img src="images/Camaro.png" alt="1968 Camaro Z28" />
           <h4 class="project-title">1968 Camaro Z28</h4>
           <p class="project-tag">Factory Spec Restoration</p>
         </article>
+
         <article class="project-card">
           <img src="images/Mustang.png" alt="1969 Mustang Mach 1" />
           <h4 class="project-title">1969 Mustang Mach 1</h4>
@@ -100,11 +108,13 @@
         <h4>Contact</h4>
         <p>Email: info@musclecars.example</p>
       </div>
+
       <div class="footer-col">
         <h4>Quick Links</h4>
         <a href="index.html">Home</a><br />
         <a href="contact.html">Contact</a>
       </div>
+
       <div class="footer-col">
         <h4>Follow</h4>
         <p>Instagram / Facebook</p>
@@ -112,9 +122,13 @@
     </div>
   </footer>
 
-  <!-- Inline CSS example on a single element (for assignment requirement) -->
   <script>
-    // No inline CSS here; example below in contact.html form button
+    // Mobile menu toggle
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".main-nav");
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("open");
+    });
   </script>
 </body>
 </html>
