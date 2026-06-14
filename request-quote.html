@@ -3,14 +3,106 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Muscle Cars — Request Quote</title>
-  <meta name="description" content="Request a quote for your muscle car project." />
+  <title>MuscleCars — Request a Quote</title>
+  <meta name="description" content="Request a quote for your muscle car project. We'll reply within 48 hours." />
   <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    /* Page-specific styling for Request a Quote layout */
+    .quote-section {
+      text-align: center;
+      padding: 60px 0 40px;
+      background: var(--bg);
+    }
+    .quote-section h1 {
+      font-size: 32px;
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
+    .quote-section p {
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.6;
+      margin: 0 auto;
+      max-width: 600px;
+    }
+
+    .quote-form-wrapper {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      padding: 32px;
+      max-width: 720px;
+      margin: 40px auto;
+      border: 1px solid #e5e7eb;
+    }
+
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    form label {
+      font-weight: 600;
+      font-size: 14px;
+      margin-bottom: 4px;
+      display: block;
+    }
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    form textarea {
+      grid-column: span 2;
+      resize: vertical;
+      min-height: 120px;
+    }
+    .form-note {
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+    .checkbox-label {
+      grid-column: span 2;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      margin-top: 8px;
+    }
+    .submit-btn {
+      grid-column: span 2;
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 14px 0;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 12px;
+    }
+    .submit-btn:hover {
+      background: #a31212;
+    }
+
+    @media (max-width: 768px) {
+      form {
+        grid-template-columns: 1fr;
+      }
+      .quote-form-wrapper {
+        padding: 24px;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <img src="images/MuscleCarLogo.png" alt="Muscle Cars logo" class="logo" />
+      <img src="images/MuscleCarLogo.png" alt="MuscleCars logo" class="logo" />
       <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
       <nav class="main-nav" aria-label="Main navigation">
         <a class="nav-link" href="index.html">Home</a>
@@ -22,59 +114,68 @@
     </div>
   </header>
 
-  <main class="container">
-    <section class="contact-intro">
+  <main>
+    <!-- Quote Section -->
+    <section class="quote-section">
       <h1>Request a Quote</h1>
       <p>Tell us about your car and project. We'll reply within 48 hours.</p>
     </section>
 
-    <section class="contact-form">
-      <form id="project-form" action="#" method="post" class="form" novalidate>
-        <label for="name">Name</label>
-        <input id="name" name="name" class="form-input" type="text" required />
+    <!-- Form -->
+    <section class="quote-form-wrapper">
+      <form id="quote-form" action="#" method="post" novalidate>
+        <div>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="John Doe" required />
+        </div>
 
-        <label for="email">Email</label>
-        <input id="email" name="email" class="form-input" type="email" required />
+        <div>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="john@example.com" required />
+        </div>
 
-        <label for="phone">Phone (optional)</label>
-        <input id="phone" name="phone" class="form-input" type="tel" />
+        <div>
+          <label for="phone">Phone <span style="color:var(--muted);font-weight:400;">(Optional)</span></label>
+          <input id="phone" name="phone" type="tel" placeholder="(555) 123-4567" />
+        </div>
 
-        <label for="car">Car Make / Model / Year</label>
-        <input id="car" name="car" class="form-input" type="text" required />
+        <div>
+          <label for="car">Car Make/Model/Year</label>
+          <input id="car" name="car" type="text" placeholder="1969 Ford Mustang" required />
+        </div>
 
-        <label for="project-type">Project Type</label>
-        <select id="project-type" name="project-type" class="form-input">
-          <option>Restoration</option>
-          <option>Custom Build</option>
-          <option>Maintenance</option>
-          <option>Other</option>
-        </select>
+        <div>
+          <label for="project-type">Project Type</label>
+          <input id="project-type" name="project-type" type="text" />
+        </div>
 
-        <label for="budget">Budget Range</label>
-        <select id="budget" name="budget" class="form-input">
-          <option>&lt;$5k</option>
-          <option>$5k–$20k</option>
-          <option>$20k–$50k</option>
-          <option>$50k+</option>
-        </select>
+        <div>
+          <label for="budget">Budget Range</label>
+          <input id="budget" name="budget" type="text" />
+        </div>
 
-        <label for="start-date">Desired Start Date</label>
-        <input id="start-date" name="start-date" class="form-input" type="date" />
+        <div style="grid-column: span 2;">
+          <label for="start-date">Desired Start Date</label>
+          <input id="start-date" name="start-date" type="date" />
+        </div>
 
-        <label for="description">Project Description</label>
-        <textarea id="description" name="description" class="form-input" rows="5"></textarea>
+        <div style="grid-column: span 2;">
+          <label for="description">Project Description</label>
+          <textarea id="description" name="description" placeholder="Tell us what you're looking to achieve..."></textarea>
+        </div>
 
-        <label for="file">Attach file (optional)</label>
-        <input id="file" name="file" class="form-input" type="file" />
+        <div style="grid-column: span 2;">
+          <label for="file">File Upload <span style="color:var(--muted);font-weight:400;">(Optional)</span></label>
+          <input id="file" name="file" type="file" />
+          <p class="form-note">Upload photos of your car or inspiration images.</p>
+        </div>
 
         <label class="checkbox-label">
           <input type="checkbox" id="consent" name="consent" required />
           I agree to be contacted about this project.
         </label>
 
-        <button type="submit" class="btn btn-primary" style="background:#B71C1C; color:#fff; padding:12px 20px;">
-          Send Request
-        </button>
+        <button type="submit" class="submit-btn">Send Request</button>
       </form>
     </section>
   </main>
@@ -82,18 +183,22 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-col">
-        <h4>Contact</h4>
-        <p>Email: info@musclecars.example</p>
+        <h4>MuscleCars</h4>
+        <p>Restorations, custom builds, and maintenance for classic and modern muscle cars.</p>
       </div>
       <div class="footer-col">
         <h4>Quick Links</h4>
-        <a href="index.html">Home</a><br />
         <a href="portfolio.html">Portfolio</a><br />
         <a href="services.html">Services</a><br />
         <a href="about.html">About</a><br />
-        <a href="request-quote.html">Request Quote</a>
+        <a href="request-quote.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>Detroit, MI (or nearby)<br />(555) 123-4567<br />info@musclecarsgarage.com</p>
       </div>
     </div>
+    <p style="text-align:center; margin-top:16px; font-size:14px; color:#9CA3AF;">© 2026 MuscleCars Garage. All rights reserved.</p>
   </footer>
 
   <script>
@@ -106,4 +211,3 @@
   </script>
 </body>
 </html>
-
