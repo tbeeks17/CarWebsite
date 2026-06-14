@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Muscle Cars — Portfolio</title>
+  <meta name="description" content="Portfolio of Muscle Cars builds and restorations." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <img src="images/MuscleCarLogo.png" alt="Muscle Cars logo" class="logo" />
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="portfolio.html">Portfolio</a>
+        <a class="nav-link" href="services.html">Services</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-cta" href="request-quote.html">Request Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-header">
+      <h1>Portfolio</h1>
+      <p>Selected builds, restorations, and custom projects.</p>
+    </section>
+
+    <section class="portfolio-list">
+      <div class="project-grid">
+        <article class="project-card">
+          <img src="images/Chevelle.png" alt="1970 Chevelle" />
+          <h4 class="project-title">1970 Chevelle SS</h4>
+          <p class="project-tag">Full frame-off restoration</p>
+        </article>
+        <article class="project-card">
+          <img src="images/Camaro.png" alt="1968 Camaro Z28" />
+          <h4 class="project-title">1968 Camaro Z28</h4>
+          <p class="project-tag">Factory-spec restoration</p>
+        </article>
+        <article class="project-card">
+          <img src="images/Mustang.png" alt="1969 Mustang Mach 1" />
+          <h4 class="project-title">1969 Mustang Mach 1</h4>
+          <p class="project-tag">Pro-touring build</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>Email: info@musclecars.example</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a><br />
+        <a href="portfolio.html">Portfolio</a><br />
+        <a href="services.html">Services</a><br />
+        <a href="about.html">About</a><br />
+        <a href="request-quote.html">Request Quote</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".main-nav");
+    toggle.addEventListener("click", () => {
+      const isOpen = nav.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    });
+  </script>
+</body>
+</html>

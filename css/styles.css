@@ -121,3 +121,19 @@ img{max-width:100%;height:auto;display:block}
   .hero-title{font-size:26px}
   body{font-size:16px}
 }
+.page-header{
+  margin-bottom:24px;
+}
+.page-header h1{
+  font-size:32px;
+  margin-bottom:8px;
+}
+.page-header p{
+  color:var(--muted);
+}
+.about-content,
+.portfolio-list{
+  background:#fff;
+  padding:16px;
+  border-radius:8px;
+}
