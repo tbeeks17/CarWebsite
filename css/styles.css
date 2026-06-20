@@ -2,27 +2,17 @@
 /* Root Variables & Global Styles  */
 /* ------------------------------- */
 /* Primary Red (buttons, subheadings) */
+/* ============================================
+   COLOR PALETTE (Exact Hex Codes)
+   ============================================ */
 :root {
   --red: #B71C1C;
-
-  /* Case Study Label Yellow */
   --yellow: #FACC15;
-
-  /* Dark Hero + Footer */
   --dark: #111827;
-
-  /* Light Gray Background */
   --light-gray: #F3F4F6;
-
-  /* Soft Border Gray */
   --border-gray: #E5E7EB;
-
-  /* Muted Text Gray */
   --muted: #6B7280;
-
-  /* Container Width */
   --container-width: 1100px;
-
   font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
 }
 
@@ -98,7 +88,7 @@ img {
 }
 
 /* ============================================
-   HOME PAGE — DARK HERO
+   HERO (Dark for Home)
    ============================================ */
 .hero-dark {
   background: var(--dark);
@@ -127,11 +117,16 @@ img {
   border-radius: 6px;
   font-weight: 600;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 .btn-red {
   background: var(--red);
   color: #fff;
+}
+
+.btn-red:hover {
+  background: #9b1515;
 }
 
 .btn-outline {
@@ -140,8 +135,13 @@ img {
   background: transparent;
 }
 
+.btn-outline:hover {
+  background: var(--red);
+  color: #fff;
+}
+
 /* ============================================
-   LIGHT SECTIONS (Services, About, etc.)
+   LIGHT SECTIONS
    ============================================ */
 .section-light {
   background: #fff;
@@ -159,12 +159,13 @@ img {
 }
 
 /* ============================================
-   SERVICES CARDS
+   SERVICES GRID
    ============================================ */
 .services-grid {
   display: flex;
   gap: 24px;
   margin-top: 32px;
+  flex-wrap: wrap;
 }
 
 .service-card {
@@ -173,26 +174,17 @@ img {
   border-radius: 8px;
   padding: 24px;
   flex: 1;
-}
-
-.service-card h3 {
-  font-size: 20px;
-  margin-bottom: 8px;
-  color: var(--dark);
-}
-
-.service-card p {
-  color: var(--muted);
-  margin-bottom: 8px;
+  min-width: 280px;
 }
 
 /* ============================================
-   ABOUT CARDS
+   ABOUT GRID
    ============================================ */
 .about-grid {
   display: flex;
   gap: 24px;
   margin-top: 32px;
+  flex-wrap: wrap;
 }
 
 .about-card {
@@ -201,15 +193,67 @@ img {
   border-radius: 8px;
   padding: 24px;
   flex: 1;
-}
-
-.about-card h3 {
-  font-size: 20px;
-  margin-bottom: 8px;
+  min-width: 280px;
 }
 
 /* ============================================
-   PORTFOLIO — CASE STUDIES
+   PORTFOLIO GALLERY GRID
+   ============================================ */
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.gallery-card {
+  background: #fff;
+  border: 1px solid var(--border-gray);
+  border-radius: 8px;
+  overflow: hidden;
+  width: 320px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.gallery-card:hover {
+  transform: translateY(-4px);
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.gallery-card-body {
+  padding: 16px;
+}
+
+.gallery-card-body h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.gallery-card-body p {
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.gallery-card-body a {
+  color: var(--red);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.gallery-card-body a:hover {
+  text-decoration: underline;
+}
+
+/* ============================================
+   CASE STUDIES
    ============================================ */
 .case-study-section {
   background: #fff;
@@ -227,7 +271,6 @@ img {
   transform: translateY(0);
 }
 
-/* Yellow CASE STUDY label */
 .case-study-label {
   color: var(--yellow);
   font-size: 14px;
@@ -236,7 +279,6 @@ img {
   margin-bottom: 8px;
 }
 
-/* Red subheadings */
 .case-study-section h3 {
   color: var(--red);
   font-size: 18px;
@@ -244,7 +286,6 @@ img {
   margin-bottom: 6px;
 }
 
-/* Tools/Parts Used Box */
 .tools-box {
   background: var(--light-gray);
   border: 1px solid var(--border-gray);
@@ -259,7 +300,7 @@ img {
 }
 
 /* ============================================
-   PAGINATION
+   PAGINATION + BACK TO TOP
    ============================================ */
 .pagination {
   display: flex;
@@ -282,9 +323,6 @@ img {
   color: #fff;
 }
 
-/* ============================================
-   BACK TO TOP BUTTON
-   ============================================ */
 #backToTop {
   position: fixed;
   bottom: 24px;
@@ -318,6 +356,7 @@ img {
   display: flex;
   justify-content: space-between;
   gap: 24px;
+  flex-wrap: wrap;
 }
 
 .footer-col h4 {
@@ -338,3 +377,38 @@ img {
 .footer-col a:hover {
   text-decoration: underline;
 }
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+@media (max-width: 1024px) {
+  .hero-dark {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-dark img {
+    margin-top: 24px;
+  }
+
+  .gallery-grid {
+    justify-content: center;
+  }
+
+  .gallery-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-card {
+    width: 100%;
+  }
+
+  .services-grid,
+  .about-grid {
+    flex-direction: column;
+  }
+
+  .footer-inner {
+    flex-direction: column
