@@ -455,3 +455,40 @@ img {
     width: 100%;
   }
 }
+/* SERVICES GRID FIX */
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.service-card {
+  background: #fff;
+  border: 1px solid var(--border-gray);
+  border-radius: 8px;
+  padding: 24px;
+  flex: 1;
+  min-width: 280px;
+  max-width: 320px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .service-card {
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-card {
+    max-width: 100%;
+  }
+}

@@ -24,60 +24,84 @@
   </header>
 
   <!-- SERVICES HERO -->
-  <section class="section-light">
-    <div class="container">
-      <h1>Our Services</h1>
-      <p>From full restorations to performance upgrades, we bring classic muscle back to life.</p>
+  <section class="section-light" style="background:var(--light-gray);padding:60px 0;">
+    <div class="container" style="text-align:center;">
+      <h1>Services</h1>
+      <p style="color:var(--muted);max-width:700px;margin:0 auto;">
+        What I offer to owners and hobbyists. From minor tuning to full ground‑up restorations.
+      </p>
     </div>
   </section>
 
   <!-- SERVICES GRID -->
-  <section class="section-light">
+  <section class="section-light" style="background:#fff;padding:60px 0;">
     <div class="container services-grid">
 
-      <article class="service-card">
-        <h3>Full Restoration</h3>
-        <p>Complete frame‑off restoration including body, paint, interior, and drivetrain.</p>
-        <p class="service-price" style="font-weight:600;">Starting at $40,000</p>
+      <!-- CARD 1 -->
+      <article class="service-card" style="text-align:center;">
+        <img src="images/icon-wrench.png" alt="Restoration Consultation" style="height:40px;margin-bottom:12px;">
+        <h3>Restoration Consultation</h3>
+        <p style="color:var(--muted);margin-bottom:12px;">
+          Expert advice before you start. Includes a thorough vehicle inspection checklist and project roadmap.
+        </p>
+        <p style="font-weight:600;margin-bottom:16px;">Starting at $150</p>
+        <a href="request-quote.html" class="btn btn-outline">Book Consult</a>
       </article>
 
-      <article class="service-card">
-        <h3>Pro‑Touring Build</h3>
-        <p>Modern suspension, brakes, and powertrain while keeping classic looks.</p>
-        <p class="service-price" style="font-weight:600;">Starting at $50,000</p>
+      <!-- CARD 2 (Most Popular) -->
+      <article class="service-card" style="background:var(--dark);color:#fff;text-align:center;position:relative;">
+        <div style="position:absolute;top:16px;right:16px;background:var(--yellow);color:#000;font-size:12px;font-weight:700;padding:4px 8px;border-radius:4px;">
+          MOST POPULAR
+        </div>
+        <img src="images/icon-engine.png" alt="Custom Builds" style="height:40px;margin-bottom:12px;">
+        <h3>Custom Builds</h3>
+        <p style="color:#E5E7EB;margin-bottom:12px;">
+          Full rotisserie restorations, restomods, and pro‑touring builds. Includes complete parts sourcing.
+        </p>
+        <p style="font-weight:600;margin-bottom:16px;">Quote based on scope</p>
+        <a href="request-quote.html" class="btn btn-red">Request Quote</a>
       </article>
 
-      <article class="service-card">
-        <h3>Maintenance & Upgrades</h3>
-        <p>Regular service, tuning, and bolt‑on upgrades for classic and modern muscle.</p>
-        <p class="service-price" style="font-weight:600;">Hourly rates available</p>
+      <!-- CARD 3 -->
+      <article class="service-card" style="text-align:center;">
+        <img src="images/icon-tuning.png" alt="Maintenance & Tuning" style="height:40px;margin-bottom:12px;">
+        <h3>Maintenance & Tuning</h3>
+        <p style="color:var(--muted);margin-bottom:12px;">
+          Keep your classic running right. Carburetor tuning, timing, suspension setups, and general maintenance.
+        </p>
+        <p style="font-weight:600;margin-bottom:16px;">Hourly rate (Dyno tuning available)</p>
+        <a href="request-quote.html" class="btn btn-outline">Schedule Service</a>
       </article>
 
     </div>
   </section>
 
-  <!-- FAQ -->
-  <section class="section-light">
-    <div class="container">
-      <h1>Frequently Asked Questions</h1>
+  <!-- FAQ SECTION -->
+  <section class="section-light" style="background:var(--light-gray);padding:60px 0;">
+    <div class="container" style="text-align:center;">
+      <h2 style="font-size:28px;font-weight:700;margin-bottom:32px;">Frequently Asked Questions</h2>
 
-      <div class="faq-list" style="margin-top:24px;display:flex;flex-direction:column;gap:20px;">
-
-        <div class="faq-item">
-          <h3 style="color:var(--red);font-size:18px;">How long does a full build take?</h3>
-          <p style="color:var(--muted);">Most full builds take 6–12 months depending on parts availability and scope.</p>
+      <div style="display:flex;flex-direction:column;gap:20px;max-width:800px;margin:0 auto;">
+        <div style="background:#fff;border:1px solid var(--border-gray);border-radius:8px;padding:20px;text-align:left;">
+          <h3 style="color:var(--dark);font-size:18px;margin-bottom:8px;">How long does a restoration take?</h3>
+          <p style="color:var(--muted);">
+            A full frame‑off restoration typically takes 12 to 18 months depending on parts availability and the initial condition of the shell.
+          </p>
         </div>
 
-        <div class="faq-item">
-          <h3 style="color:var(--red);font-size:18px;">Do you help source cars?</h3>
-          <p style="color:var(--muted);">Yes, we can help locate suitable project cars and inspect them before purchase.</p>
+        <div style="background:#fff;border:1px solid var(--border-gray);border-radius:8px;padding:20px;text-align:left;">
+          <h3 style="color:var(--dark);font-size:18px;margin-bottom:8px;">Do you source parts for the build?</h3>
+          <p style="color:var(--muted);">
+            Yes! We handle all parts sourcing, utilizing our network of trusted suppliers to find rare original parts or high‑quality aftermarket components.
+          </p>
         </div>
 
-        <div class="faq-item">
-          <h3 style="color:var(--red);font-size:18px;">Can you work with my existing parts?</h3>
-          <p style="color:var(--muted);">We’ll evaluate your parts and let you know what’s usable and what should be replaced.</p>
+        <div style="background:#fff;border:1px solid var(--border-gray);border-radius:8px;padding:20px;text-align:left;">
+          <h3 style="color:var(--dark);font-size:18px;margin-bottom:8px;">Can I bring in my own parts?</h3>
+          <p style="color:var(--muted);">
+            Absolutely. If you’ve already started collecting parts for your build, we are happy to evaluate and integrate them into the project.
+          </p>
         </div>
-
       </div>
     </div>
   </section>
@@ -85,7 +109,6 @@
   <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container footer-inner">
-
       <div class="footer-col">
         <h4>MuscleCars</h4>
         <p>Restorations, custom builds, and maintenance for classic and modern muscle cars.</p>
@@ -103,7 +126,6 @@
         <h4>Contact</h4>
         <p>Detroit, MI<br />(555) 123‑4567<br />info@musclecarsgarage.com</p>
       </div>
-
     </div>
 
     <p style="text-align:center;margin-top:16px;font-size:14px;color:#9CA3AF;">
@@ -113,4 +135,3 @@
 
 </body>
 </html>
-
