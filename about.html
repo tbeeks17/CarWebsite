@@ -3,211 +3,45 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MuscleCars — About the Garage</title>
-  <meta name="description" content="Learn more about MuscleCars Garage, our process, and what clients say." />
+  <title>MuscleCars — About</title>
   <link rel="stylesheet" href="css/styles.css" />
-  <style>
-    /* Page-specific styling for About layout */
-    .about-section {
-      text-align: center;
-      padding: 60px 0 40px;
-      background: var(--bg);
-    }
-    .about-section h1 {
-      font-size: 32px;
-      margin-bottom: 16px;
-      font-weight: 700;
-    }
-    .about-section p {
-      max-width: 700px;
-      margin: 0 auto;
-      color: var(--muted);
-      line-height: 1.6;
-    }
-
-    .process-section {
-      text-align: center;
-      padding: 40px 0;
-      background: #fff;
-    }
-    .process-section h2 {
-      font-size: 24px;
-      margin-bottom: 32px;
-      font-weight: 700;
-    }
-    .process-grid {
-      display: flex;
-      gap: 16px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    .process-card {
-      background: #fff;
-      border: 1px solid #e5e7eb;
-      border-top: 4px solid var(--primary);
-      border-radius: var(--radius);
-      width: 220px;
-      padding: 24px;
-      text-align: center;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    }
-    .process-card h3 {
-      font-size: 18px;
-      margin-bottom: 8px;
-      font-weight: 600;
-    }
-    .process-card p {
-      font-size: 14px;
-      color: var(--muted);
-    }
-    .process-card .step-number {
-      font-weight: 700;
-      font-size: 20px;
-      color: var(--accent);
-      margin-bottom: 8px;
-    }
-
-    .testimonials-section {
-      background: var(--accent);
-      color: #fff;
-      padding: 60px 0;
-      text-align: center;
-    }
-    .testimonials-section h2 {
-      font-size: 24px;
-      margin-bottom: 32px;
-      font-weight: 700;
-    }
-    .testimonial-grid {
-      display: flex;
-      gap: 24px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    .testimonial-card {
-      background: #1f2937;
-      border-radius: var(--radius);
-      padding: 24px;
-      width: 320px;
-      text-align: left;
-    }
-    .testimonial-card p {
-      font-style: italic;
-      margin-bottom: 16px;
-      line-height: 1.6;
-    }
-    .testimonial-author {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-    .author-initials {
-      background: var(--primary);
-      color: #fff;
-      border-radius: 50%;
-      width: 36px;
-      height: 36px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-    }
-    .author-info {
-      font-size: 14px;
-      line-height: 1.4;
-    }
-    .author-info strong {
-      display: block;
-      font-weight: 600;
-    }
-
-    @media (max-width: 768px) {
-      .process-grid, .testimonial-grid {
-        flex-direction: column;
-        align-items: center;
-      }
-      .process-card, .testimonial-card {
-        width: 90%;
-      }
-    }
-  </style>
 </head>
 
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <img src="images/MuscleCarLogo.png" alt="MuscleCars logo" class="logo" />
-      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-      <nav class="main-nav" aria-label="Main navigation">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="portfolio.html">Portfolio</a>
-        <a class="nav-link" href="services.html">Services</a>
-        <a class="nav-link" href="about.html">About</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
         <a class="nav-cta" href="request-quote.html">Request Quote</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <!-- About Section -->
-    <section class="about-section">
-      <h1>About the Garage</h1>
-      <p>I grew up turning wrenches on big block Chevys in my dad’s driveway. What started as a weekend hobby turned into a lifelong passion for preserving and improving American muscle. At MuscleCars Garage, we believe every classic has a story, and our job is to make sure it keeps being told on the open road.</p>
+  <main class="container">
+    <section class="about-hero">
+      <h1>About the Shop</h1>
+      <p>We’re a small team of builders focused on quality, detail, and drivability.</p>
     </section>
 
-    <!-- Process Section -->
-    <section class="process-section">
-      <h2>Our Process</h2>
-      <div class="process-grid">
-        <div class="process-card">
-          <div class="step-number">1</div>
-          <h3>Inspect</h3>
-          <p>We perform a complete teardown and evaluation to find hidden issues.</p>
-        </div>
-        <div class="process-card">
-          <div class="step-number">2</div>
-          <h3>Plan</h3>
-          <p>A detailed roadmap and budget is created before any real work begins.</p>
-        </div>
-        <div class="process-card">
-          <div class="step-number">3</div>
-          <h3>Build</h3>
-          <p>Fabrication, paint, and assembly using top-tier components.</p>
-        </div>
-        <div class="process-card">
-          <div class="step-number">4</div>
-          <h3>Deliver</h3>
-          <p>Final dyno tuning, road testing, and handing you the keys.</p>
-        </div>
-      </div>
-    </section>
+    <section class="about-grid">
+      <article class="about-card">
+        <h3>Our Process</h3>
+        <p>Every build starts with a detailed plan, parts list, and timeline so you know what to expect.</p>
+      </article>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials-section">
-      <h2>What Clients Say</h2>
-      <div class="testimonial-grid">
-        <div class="testimonial-card">
-          <p>“The attention to detail on my ’69 Mach 1 was incredible. They didn’t just rebuild it; they engineered it to drive better than it ever did from the factory.”</p>
-          <div class="testimonial-author">
-            <div class="author-initials">MR</div>
-            <div class="author-info">
-              <strong>Mark R.</strong>
-              1969 Mustang Owner
-            </div>
-          </div>
-        </div>
+      <article class="about-card">
+        <h3>Focus on Drivability</h3>
+        <p>We don’t just build cars that look good — we build cars you actually want to drive.</p>
+      </article>
 
-        <div class="testimonial-card">
-          <p>“Honest, transparent communication throughout the entire 18-month build. I always knew exactly where we stood on budget and timeline.”</p>
-          <div class="testimonial-author">
-            <div class="author-initials">DT</div>
-            <div class="author-info">
-              <strong>Dave T.</strong>
-              1970 Chevelle Owner
-            </div>
-          </div>
-        </div>
-      </div>
+      <article class="about-card">
+        <h3>Communication</h3>
+        <p>Regular updates, photos, and progress reports keep you in the loop from start to finish.</p>
+      </article>
     </section>
   </main>
 
@@ -226,19 +60,10 @@
       </div>
       <div class="footer-col">
         <h4>Contact</h4>
-        <p>Detroit, MI (or nearby)<br />(555) 123-4567<br />info@musclecarsgarage.com</p>
+        <p>Detroit, MI<br />(555) 123-4567<br />info@musclecarsgarage.com</p>
       </div>
     </div>
     <p style="text-align:center; margin-top:16px; font-size:14px; color:#9CA3AF;">© 2026 MuscleCars Garage. All rights reserved.</p>
   </footer>
-
-  <script>
-    const toggle = document.querySelector(".menu-toggle");
-    const nav = document.querySelector(".main-nav");
-    toggle.addEventListener("click", () => {
-      const isOpen = nav.classList.toggle("open");
-      toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
-    });
-  </script>
 </body>
 </html>

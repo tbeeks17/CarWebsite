@@ -3,77 +3,33 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Muscle Cars — Home</title>
-  <meta name="description" content="Muscle Cars: builds, restorations, and events for classic and modern muscle car fans." />
+  <title>MuscleCars — Home</title>
   <link rel="stylesheet" href="css/styles.css" />
-  <style>
-    .hero-sub { color: #333333; font-size: 18px; }
-  </style>
 </head>
+
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <img src="images/MuscleCarLogo.png" alt="Muscle Cars logo" class="logo" />
-
-      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-
-      <nav class="main-nav" aria-label="Main navigation">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="portfolio.html">Portfolio</a>
-        <a class="nav-link" href="services.html">Services</a>
-        <a class="nav-link" href="about.html">About</a>
+      <img src="images/MuscleCarLogo.png" alt="MuscleCars logo" class="logo" />
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
         <a class="nav-cta" href="request-quote.html">Request Quote</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section class="hero container" id="home-hero">
+  <main class="container">
+    <section class="hero">
       <div class="hero-text">
-        <h1 class="hero-title">American Muscle Lives On</h1>
-        <p class="hero-sub">Stories, builds, and events for classic and modern muscle car fans.</p>
-        <a class="btn btn-primary" href="request-quote.html">Request Quote</a>
-        <a class="btn btn-secondary" href="portfolio.html">Browse Builds</a>
+        <h1 class="hero-title">Preserving American Muscle</h1>
+        <p class="hero-sub">From restorations to pro‑touring builds, we bring classics back to life.</p>
+        <a href="portfolio.html#chevelle" class="btn btn-primary">View Featured Project →</a>
       </div>
-
       <div class="hero-image">
-        <img src="images/RedMuscle.png" alt="Red muscle car" />
-      </div>
-    </section>
-
-    <section class="features container">
-      <div class="feature">
-        <h3>Featured Builds</h3>
-        <p>In-depth project galleries and before/after photos.</p>
-      </div>
-      <div class="feature">
-        <h3>Events & Meets</h3>
-        <p>Local shows, cruise nights, and meetups.</p>
-      </div>
-      <div class="feature">
-        <h3>Buyers Guide</h3>
-        <p>Tips for buying and restoring classic muscle cars.</p>
-      </div>
-    </section>
-
-    <section class="portfolio container">
-      <h2>Featured Project</h2>
-      <div class="project-grid">
-        <article class="project-card">
-          <img src="images/Chevelle.png" alt="1970 Chevelle" />
-          <h4 class="project-title">1970 Chevelle SS Build</h4>
-          <p class="project-tag">Restoration + 572 crate motor</p>
-        </article>
-        <article class="project-card">
-          <img src="images/Camaro.png" alt="1968 Camaro Z28" />
-          <h4 class="project-title">1968 Camaro Z28</h4>
-          <p class="project-tag">Factory Spec Restoration</p>
-        </article>
-        <article class="project-card">
-          <img src="images/Mustang.png" alt="1969 Mustang Mach 1" />
-          <h4 class="project-title">1969 Mustang Mach 1</h4>
-          <p class="project-tag">Pro-Touring Build</p>
-        </article>
+        <img src="images/RedMuscle.png" alt="Classic muscle car" />
       </div>
     </section>
   </main>
@@ -81,31 +37,22 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-col">
-        <h4>Contact</h4>
-        <p>Email: info@musclecars.example</p>
+        <h4>MuscleCars</h4>
+        <p>Restorations, custom builds, and maintenance for classic and modern muscle cars.</p>
       </div>
       <div class="footer-col">
         <h4>Quick Links</h4>
-        <a href="index.html">Home</a><br />
         <a href="portfolio.html">Portfolio</a><br />
         <a href="services.html">Services</a><br />
         <a href="about.html">About</a><br />
-        <a href="request-quote.html">Request Quote</a>
+        <a href="request-quote.html">Contact</a>
       </div>
       <div class="footer-col">
-        <h4>Follow</h4>
-        <p>Instagram / Facebook</p>
+        <h4>Contact</h4>
+        <p>Detroit, MI<br />(555) 123-4567<br />info@musclecarsgarage.com</p>
       </div>
     </div>
+    <p style="text-align:center; margin-top:16px; font-size:14px; color:#9CA3AF;">© 2026 MuscleCars Garage. All rights reserved.</p>
   </footer>
-
-  <script>
-    const toggle = document.querySelector(".menu-toggle");
-    const nav = document.querySelector(".main-nav");
-    toggle.addEventListener("click", () => {
-      const isOpen = nav.classList.toggle("open");
-      toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
-    });
-  </script>
 </body>
 </html>

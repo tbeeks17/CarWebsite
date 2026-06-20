@@ -4,175 +4,62 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>MuscleCars — Portfolio</title>
-  <meta name="description" content="Gallery of recent restorations and custom builds from MuscleCars Garage." />
   <link rel="stylesheet" href="css/styles.css" />
-  <style>
-    /* Page-specific styling to match the Portfolio UI */
-
-    .portfolio-hero {
-      text-align: center;
-      padding: 48px 0 32px;
-    }
-    .portfolio-hero h1 {
-      font-size: 32px;
-      margin-bottom: 12px;
-      font-weight: 700;
-    }
-    .portfolio-hero p {
-      max-width: 640px;
-      margin: 0 auto;
-      color: var(--muted);
-      line-height: 1.6;
-    }
-
-    .gallery-grid {
-      display: flex;
-      gap: 24px;
-      flex-wrap: wrap;
-      margin-top: 24px;
-    }
-    .gallery-card {
-      background: #fff;
-      border-radius: var(--radius);
-      overflow: hidden;
-      flex: 1;
-      min-width: 260px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.04);
-      border: 1px solid #e5e7eb;
-      display: flex;
-      flex-direction: column;
-    }
-    .gallery-card img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-    }
-    .gallery-card-body {
-      padding: 16px 18px 18px;
-    }
-    .gallery-card-body h3 {
-      font-size: 18px;
-      margin-bottom: 4px;
-      font-weight: 600;
-    }
-    .gallery-card-body p {
-      font-size: 14px;
-      color: var(--muted);
-      margin-bottom: 12px;
-    }
-    .gallery-card-body a {
-      font-size: 14px;
-      text-decoration: none;
-      color: var(--primary);
-      font-weight: 600;
-    }
-
-    .case-study-section {
-      margin-top: 48px;
-      padding: 32px 24px;
-      background: #fff;
-      border-radius: var(--radius);
-      border: 1px solid #e5e7eb;
-    }
-    .case-study-label {
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--primary);
-      margin-bottom: 8px;
-    }
-    .case-study-section h2 {
-      font-size: 24px;
-      margin-bottom: 16px;
-      font-weight: 700;
-    }
-    .case-study-section h3 {
-      font-size: 16px;
-      margin-top: 16px;
-      margin-bottom: 6px;
-      font-weight: 600;
-    }
-    .case-study-section p {
-      font-size: 14px;
-      color: var(--accent);
-      line-height: 1.6;
-    }
-    .case-study-list {
-      margin-top: 8px;
-      margin-left: 18px;
-      font-size: 14px;
-      color: var(--accent);
-      line-height: 1.6;
-    }
-
-    @media (max-width: 900px) {
-      .gallery-grid {
-        flex-direction: column;
-      }
-    }
-  </style>
 </head>
 
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <img src="images/MuscleCarLogo.png" alt="MuscleCars logo" class="logo" />
-      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-      <nav class="main-nav" aria-label="Main navigation">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="portfolio.html">Portfolio</a>
-        <a class="nav-link" href="services.html">Services</a>
-        <a class="nav-link" href="about.html">About</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
         <a class="nav-cta" href="request-quote.html">Request Quote</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
-    <!-- Gallery Hero -->
     <section class="portfolio-hero">
       <h1>Gallery</h1>
       <p>Gallery of recent restorations and custom builds from the shop.</p>
     </section>
 
-    <!-- Gallery Cards -->
     <section>
       <div class="gallery-grid">
-        <!-- 1970 Chevelle SS -->
         <article class="gallery-card">
           <img src="images/Chevelle.png" alt="1970 Chevelle SS" />
           <div class="gallery-card-body">
             <h3>1970 Chevelle SS</h3>
             <p>Restoration + 572 Crate Motor</p>
-            <a href="#chevelle-case">View Case Study →</a>
+            <a href="#chevelle">View Case Study →</a>
           </div>
         </article>
 
-        <!-- 1969 Mustang Mach 1 -->
         <article class="gallery-card">
           <img src="images/Mustang.png" alt="1969 Mustang Mach 1" />
           <div class="gallery-card-body">
             <h3>1969 Mustang Mach 1</h3>
-            <p>Pro-Touring Build</p>
-            <a href="#chevelle-case">View Case Study →</a>
+            <p>Pro‑Touring Build</p>
+            <a href="#mach1">View Case Study →</a>
           </div>
         </article>
 
-        <!-- 1968 Camaro Z28 -->
         <article class="gallery-card">
           <img src="images/Camaro.png" alt="1968 Camaro Z28" />
           <div class="gallery-card-body">
             <h3>1968 Camaro Z28</h3>
             <p>Factory Spec Restoration</p>
-            <a href="#chevelle-case">View Case Study →</a>
+            <a href="#camaro">View Case Study →</a>
           </div>
         </article>
       </div>
     </section>
 
-    <!-- Case Study -->
-    <section class="case-study-section" id="chevelle-case">
+    <!-- CHEVELLE CASE STUDY -->
+    <section class="case-study-section" id="chevelle">
       <div class="case-study-label">CASE STUDY</div>
       <h2>1970 Chevelle SS Build</h2>
 
@@ -197,7 +84,68 @@
         <li>Vintage Air Gen IV SureFit System</li>
       </ul>
     </section>
+
+    <!-- MACH 1 CASE STUDY -->
+    <section class="case-study-section" id="mach1">
+      <div class="case-study-label">CASE STUDY</div>
+      <h2>1969 Mustang Mach 1</h2>
+
+      <h3>Problem</h3>
+      <p>The owner wanted a modern-driving Mach 1 without losing the classic fastback look. The car had tired suspension, fading paint, and an underpowered 351 that struggled on the highway.</p>
+
+      <h3>Solution</h3>
+      <p>We designed a full pro‑touring build: modern suspension, upgraded braking, a stroked 408W small block, and a complete interior refresh while keeping the original Mach 1 styling cues.</p>
+
+      <h3>Process</h3>
+      <p>We stripped the car to the shell, reinforced the chassis, and installed a full coilover suspension system. The engine was replaced with a 408 stroker paired with a TKO 5‑speed. The interior received new upholstery, gauges, and sound deadening.</p>
+
+      <h3>Results</h3>
+      <p>The Mach 1 now drives like a modern performance car — tight steering, strong braking, and over 500 horsepower on tap.</p>
+
+      <h3>Tools/Parts Used</h3>
+      <ul class="case-study-list">
+        <li>Ford 408W Stroker Engine</li>
+        <li>TKO 600 5‑Speed Transmission</li>
+        <li>Ridetech Coilover Suspension</li>
+        <li>Wilwood 6‑Piston Front Brakes</li>
+        <li>Classic Instruments Gauge Set</li>
+      </ul>
+    </section>
+
+    <!-- CAMARO CASE STUDY -->
+    <section class="case-study-section" id="camaro">
+      <div class="case-study-label">CASE STUDY</div>
+      <h2>1968 Camaro Z28</h2>
+
+      <h3>Problem</h3>
+      <p>The client wanted a factory‑correct Z28 restoration suitable for shows and auctions. The car had mismatched parts, incorrect paint codes, and a non‑original interior.</p>
+
+      <h3>Solution</h3>
+      <p>We performed a meticulous factory‑spec restoration, sourcing date‑correct components and restoring the car to its original Le Mans Blue with white stripes.</p>
+
+      <h3>Process</h3>
+      <p>We decoded the trim tag, verified drivetrain numbers, and sourced correct DZ‑302 components. The body was stripped and repainted in its original color. The interior was rebuilt using OEM‑style materials and patterns.</p>
+
+      <h3>Results</h3>
+      <p>The finished Z28 scored 97/100 at its first judged event and is now considered one of the cleanest examples in the region.</p>
+
+      <h3>Tools/Parts Used</h3>
+      <ul class="case-study-list">
+        <li>GM DZ‑302 Engine Components</li>
+        <li>Correct 4‑Speed Muncie Transmission</li>
+        <li>OEM‑Style Interior Kit</li>
+        <li>Factory‑Correct Le Mans Blue Paint</li>
+        <li>Rally Wheels + Goodyear Polyglas Tires</li>
+      </ul>
+    </section>
+
+    <div class="pagination">
+      <button class="page-btn" id="prev">← Previous</button>
+      <button class="page-btn" id="next">Next →</button>
+    </div>
   </main>
+
+  <button id="backToTop">↑</button>
 
   <footer class="site-footer">
     <div class="container footer-inner">
@@ -214,72 +162,71 @@
       </div>
       <div class="footer-col">
         <h4>Contact</h4>
-        <p>Detroit, MI (or nearby)<br />(555) 123-4567<br />info@musclecarsgarage.com</p>
+        <p>Detroit, MI<br />(555) 123-4567<br />info@musclecarsgarage.com</p>
       </div>
     </div>
     <p style="text-align:center; margin-top:16px; font-size:14px; color:#9CA3AF;">© 2026 MuscleCars Garage. All rights reserved.</p>
   </footer>
 
   <script>
-    const toggle = document.querySelector(".menu-toggle");
-    const nav = document.querySelector(".main-nav");
-    toggle.addEventListener("click", () => {
-      const isOpen = nav.classList.toggle("open");
-      toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    // Fade-in animation
+    const caseStudies = document.querySelectorAll('.case-study-section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.2 });
+    caseStudies.forEach(section => observer.observe(section));
+
+    // Dynamic switching
+    const links = document.querySelectorAll('.gallery-card-body a');
+    const studies = {
+      chevelle: document.getElementById('chevelle'),
+      mach1: document.getElementById('mach1'),
+      camaro: document.getElementById('camaro')
+    };
+
+    links.forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href').replace('#', '');
+        Object.values(studies).forEach(s => s.style.display = 'none');
+        studies[targetId].style.display = 'block';
+        studies[targetId].scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    Object.values(studies).forEach(s => s.style.display = 'none');
+    studies.chevelle.style.display = 'block';
+
+    // Pagination
+    const studySections = Object.values(studies);
+    let currentIndex = 0;
+
+    function showStudy(index) {
+      studySections.forEach((s, i) => s.style.display = i === index ? 'block' : 'none');
+      studySections[index].scrollIntoView({ behavior: 'smooth' });
+    }
+
+    document.getElementById('next').addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % studySections.length;
+      showStudy(currentIndex);
+    });
+
+    document.getElementById('prev').addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + studySections.length) % studySections.length;
+      showStudy(currentIndex);
+    });
+
+    // Back to Top
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 400) backToTop.classList.add('show');
+      else backToTop.classList.remove('show');
+    });
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   </script>
 </body>
 </html>
-<section class="case-study-section" id="mach1-case">
-  <div class="case-study-label">CASE STUDY</div>
-  <h2>1969 Mustang Mach 1</h2>
-
-  <h3>Problem</h3>
-  <p>The owner wanted a modern-driving Mach 1 without losing the classic fastback look. The car had tired suspension, fading paint, and an underpowered 351 that struggled on the highway.</p>
-
-  <h3>Solution</h3>
-  <p>We designed a full pro‑touring build: modern suspension, upgraded braking, a stroked 408W small block, and a complete interior refresh while keeping the original Mach 1 styling cues.</p>
-
-  <h3>Process</h3>
-  <p>We stripped the car to the shell, reinforced the chassis, and installed a full coilover suspension system. The engine was replaced with a 408 stroker paired with a TKO 5‑speed. The interior received new upholstery, gauges, and sound deadening.</p>
-
-  <h3>Results</h3>
-  <p>The Mach 1 now drives like a modern performance car — tight steering, strong braking, and over 500 horsepower on tap. The owner reports it’s the most enjoyable car he’s ever driven.</p>
-
-  <h3>Tools/Parts Used</h3>
-  <ul class="case-study-list">
-    <li>Ford 408W Stroker Engine</li>
-    <li>TKO 600 5‑Speed Transmission</li>
-    <li>Ridetech Coilover Suspension</li>
-    <li>Wilwood 6‑Piston Front Brakes</li>
-    <li>Classic Instruments Gauge Set</li>
-  </ul>
-</section>
-<section class="case-study-section" id="camaro-case">
-  <div class="case-study-label">CASE STUDY</div>
-  <h2>1968 Camaro Z28</h2>
-
-  <h3>Problem</h3>
-  <p>The client wanted a factory‑correct Z28 restoration suitable for shows and auctions. The car had mismatched parts, incorrect paint codes, and a non‑original interior.</p>
-
-  <h3>Solution</h3>
-  <p>We performed a meticulous factory‑spec restoration, sourcing date‑correct components and restoring the car to its original Le Mans Blue with white stripes.</p>
-
-  <h3>Process</h3>
-  <p>We decoded the trim tag, verified drivetrain numbers, and sourced correct DZ‑302 components. The body was stripped and repainted in its original color. The interior was rebuilt using OEM‑style materials and patterns.</p>
-
-  <h3>Results</h3>
-  <p>The finished Z28 scored 97/100 at its first judged event and is now considered one of the cleanest examples in the region. The owner plans to take it to Barrett‑Jackson next year.</p>
-
-  <h3>Tools/Parts Used</h3>
-  <ul class="case-study-list">
-    <li>GM DZ‑302 Engine Components</li>
-    <li>Correct 4‑Speed Muncie Transmission</li>
-    <li>OEM‑Style Interior Kit</li>
-    <li>Factory‑Correct Le Mans Blue Paint</li>
-    <li>Rally Wheels + Goodyear Polyglas Tires</li>
-  </ul>
-</section>
-<a href="#chevelle-case">View Case Study →</a>
-<a href="#mach1-case">View Case Study →</a>
-<a href="#camaro-case">View Case Study →</a>
