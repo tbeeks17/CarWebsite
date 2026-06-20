@@ -65,11 +65,7 @@
     </div>
   </section>
 
-  <!-- ============================
-       CASE STUDIES
-  ============================= -->
-
-  <!-- CHEVELLE -->
+  <!-- CASE STUDIES -->
   <section class="case-study-section" id="chevelle">
     <div class="case-study-label">CASE STUDY</div>
     <h2>1970 Chevelle SS Build</h2>
@@ -98,7 +94,6 @@
     </div>
   </section>
 
-  <!-- MACH 1 -->
   <section class="case-study-section" id="mach1">
     <div class="case-study-label">CASE STUDY</div>
     <h2>1969 Mustang Mach 1</h2>
@@ -127,7 +122,6 @@
     </div>
   </section>
 
-  <!-- CAMARO -->
   <section class="case-study-section" id="camaro">
     <div class="case-study-label">CASE STUDY</div>
     <h2>1968 Camaro Z28</h2>
@@ -156,19 +150,9 @@
     </div>
   </section>
 
-  <!-- PAGINATION -->
-  <div class="pagination">
-    <button class="page-btn" id="prev">← Previous</button>
-    <button class="page-btn" id="next">Next →</button>
-  </div>
-
-  <!-- BACK TO TOP -->
-  <button id="backToTop">↑</button>
-
   <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container footer-inner">
-
       <div class="footer-col">
         <h4>MuscleCars</h4>
         <p>Restorations, custom builds, and maintenance for classic and modern muscle cars.</p>
@@ -186,77 +170,12 @@
         <h4>Contact</h4>
         <p>Detroit, MI<br />(555) 123‑4567<br />info@musclecarsgarage.com</p>
       </div>
-
     </div>
 
     <p style="text-align:center;margin-top:16px;font-size:14px;color:#9CA3AF;">
       © 2026 MuscleCars Garage. All rights reserved.
     </p>
   </footer>
-
-  <!-- ============================
-       JAVASCRIPT
-  ============================= -->
-  <script>
-    // Fade-in animation
-    const caseStudies = document.querySelectorAll('.case-study-section');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add('visible');
-      });
-    }, { threshold: 0.2 });
-    caseStudies.forEach(section => observer.observe(section));
-
-    // Dynamic switching
-    const links = document.querySelectorAll('.gallery-card-body a');
-    const studies = {
-      chevelle: document.getElementById('chevelle'),
-      mach1: document.getElementById('mach1'),
-      camaro: document.getElementById('camaro')
-    };
-
-    links.forEach(link => {
-      link.addEventListener('click', e => {
-        e.preventDefault();
-        const targetId = link.getAttribute('href').replace('#', '');
-        Object.values(studies).forEach(s => s.style.display = 'none');
-        studies[targetId].style.display = 'block';
-        studies[targetId].scrollIntoView({ behavior: 'smooth' });
-      });
-    });
-
-    Object.values(studies).forEach(s => s.style.display = 'none');
-    studies.chevelle.style.display = 'block';
-
-    // Pagination
-    const studySections = Object.values(studies);
-    let currentIndex = 0;
-
-    function showStudy(index) {
-      studySections.forEach((s, i) => s.style.display = i === index ? 'block' : 'none');
-      studySections[index].scrollIntoView({ behavior: 'smooth' });
-    }
-
-    document.getElementById('next').addEventListener('click', () => {
-      currentIndex = (currentIndex + 1) % studySections.length;
-      showStudy(currentIndex);
-    });
-
-    document.getElementById('prev').addEventListener('click', () => {
-      currentIndex = (currentIndex - 1 + studySections.length) % studySections.length;
-      showStudy(currentIndex);
-    });
-
-    // Back to Top
-    const backToTop = document.getElementById('backToTop');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 400) backToTop.classList.add('show');
-      else backToTop.classList.remove('show');
-    });
-    backToTop.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-  </script>
 
 </body>
 </html>
