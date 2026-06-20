@@ -9,9 +9,7 @@
 
 <body>
 
-  <!-- ============================
-       HEADER
-  ============================= -->
+  <!-- HEADER -->
   <header class="site-header">
     <div class="container header-inner">
       <img src="images/MuscleCarLogo.png" alt="MuscleCars logo" class="logo" />
@@ -25,50 +23,76 @@
     </div>
   </header>
 
-  <!-- ============================
-       DARK HERO SECTION
-  ============================= -->
+  <!-- DARK HERO -->
   <section class="hero-dark">
     <div class="container" style="display:flex;align-items:center;gap:40px;">
-      
-      <!-- LEFT TEXT -->
       <div style="flex:1;">
         <h1>American Muscle Lives On</h1>
-        <p>Restoring classics with precision, passion, and modern performance upgrades.</p>
+        <p>Stories, builds, and events for classic and modern muscle car fans.</p>
 
-        <a href="portfolio.html#chevelle" class="btn btn-red" style="margin-right:12px;">
-          View Featured Project →
+        <a href="request-quote.html" class="btn btn-red" style="margin-right:12px;">
+          Request Quote
         </a>
 
-        <a href="request-quote.html" class="btn btn-outline">
-          Request a Quote
+        <a href="portfolio.html" class="btn btn-outline">
+          Browse Builds
         </a>
       </div>
 
-      <!-- RIGHT IMAGE -->
       <div style="flex:1;">
         <img src="images/RedMuscle.png" alt="Classic muscle car" />
       </div>
-
     </div>
   </section>
 
-  <!-- ============================
-       LIGHT SECTION BELOW HERO
-  ============================= -->
+  <!-- FEATURE CARDS -->
   <section class="section-light">
-    <div class="container">
-      <h1>Quality Restorations. Modern Performance.</h1>
-      <p>We specialize in frame‑off restorations, pro‑touring builds, and factory‑correct restorations.</p>
+    <div class="container" style="display:flex;gap:24px;flex-wrap:wrap;text-align:center;justify-content:center;margin-top:40px;">
+      <div style="flex:1;min-width:260px;">
+        <img src="images/icon-wrench.png" alt="Featured Builds Icon" style="height:40px;margin-bottom:12px;">
+        <h3 style="font-weight:600;">Featured Builds</h3>
+        <p style="color:var(--muted);">In-depth project galleries showcasing our restoration process from ground up.</p>
+      </div>
+
+      <div style="flex:1;min-width:260px;">
+        <img src="images/icon-calendar.png" alt="Events Icon" style="height:40px;margin-bottom:12px;">
+        <h3 style="font-weight:600;">Events & Meets</h3>
+        <p style="color:var(--muted);">Local shows, cruise nights, and track days for the muscle car community.</p>
+      </div>
+
+      <div style="flex:1;min-width:260px;">
+        <img src="images/icon-book.png" alt="Buyers Guide Icon" style="height:40px;margin-bottom:12px;">
+        <h3 style="font-weight:600;">Buyers Guide</h3>
+        <p style="color:var(--muted);">Tips, tricks, and checklists for buying and restoring classic muscle cars.</p>
+      </div>
     </div>
   </section>
 
-  <!-- ============================
-       FOOTER
-  ============================= -->
+  <!-- FEATURED PROJECT -->
+  <section class="section-light" style="background:var(--light-gray);padding:60px 0;">
+    <div class="container" style="text-align:center;">
+      <h2 style="font-size:28px;font-weight:700;margin-bottom:32px;">Featured Project</h2>
+
+      <div style="display:flex;flex-wrap:wrap;gap:32px;align-items:center;justify-content:center;">
+        <div style="flex:1;min-width:320px;">
+          <img src="images/Chevelle.png" alt="1970 Chevelle SS" style="border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+        </div>
+
+        <div style="flex:1;min-width:320px;text-align:left;">
+          <p style="color:var(--red);font-weight:700;letter-spacing:0.05em;">RESTORATION</p>
+          <h3 style="font-size:22px;font-weight:700;margin-bottom:8px;">1970 Chevelle SS Build</h3>
+          <p style="color:var(--muted);margin-bottom:16px;">
+            A complete frame‑off restoration paired with a modern 572 crate motor, modern suspension, and custom interior.
+          </p>
+          <a href="portfolio.html#chevelle" class="btn btn-red">View Full Gallery →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container footer-inner">
-
       <div class="footer-col">
         <h4>MuscleCars</h4>
         <p>Restorations, custom builds, and maintenance for classic and modern muscle cars.</p>
@@ -86,7 +110,6 @@
         <h4>Contact</h4>
         <p>Detroit, MI<br />(555) 123‑4567<br />info@musclecarsgarage.com</p>
       </div>
-
     </div>
 
     <p style="text-align:center;margin-top:16px;font-size:14px;color:#9CA3AF;">
