@@ -8,6 +8,8 @@
 </head>
 
 <body>
+
+  <!-- HEADER -->
   <header class="site-header">
     <div class="container header-inner">
       <img src="images/MuscleCarLogo.png" alt="MuscleCars logo" class="logo" />
@@ -21,138 +23,157 @@
     </div>
   </header>
 
-  <main class="container">
-    <section class="portfolio-hero">
+  <!-- PORTFOLIO HERO -->
+  <section class="section-light">
+    <div class="container">
       <h1>Gallery</h1>
-      <p>Gallery of recent restorations and custom builds from the shop.</p>
-    </section>
+      <p>Explore our recent restorations and custom builds.</p>
+    </div>
+  </section>
 
-    <section>
-      <div class="gallery-grid">
-        <article class="gallery-card">
-          <img src="images/Chevelle.png" alt="1970 Chevelle SS" />
-          <div class="gallery-card-body">
-            <h3>1970 Chevelle SS</h3>
-            <p>Restoration + 572 Crate Motor</p>
-            <a href="#chevelle">View Case Study →</a>
-          </div>
-        </article>
+  <!-- GALLERY GRID -->
+  <section class="section-light">
+    <div class="container gallery-grid">
 
-        <article class="gallery-card">
-          <img src="images/Mustang.png" alt="1969 Mustang Mach 1" />
-          <div class="gallery-card-body">
-            <h3>1969 Mustang Mach 1</h3>
-            <p>Pro‑Touring Build</p>
-            <a href="#mach1">View Case Study →</a>
-          </div>
-        </article>
+      <article class="gallery-card">
+        <img src="images/Chevelle.png" alt="1970 Chevelle SS" />
+        <div class="gallery-card-body">
+          <h3>1970 Chevelle SS</h3>
+          <p>Restoration + 572 Crate Motor</p>
+          <a href="#chevelle">View Case Study →</a>
+        </div>
+      </article>
 
-        <article class="gallery-card">
-          <img src="images/Camaro.png" alt="1968 Camaro Z28" />
-          <div class="gallery-card-body">
-            <h3>1968 Camaro Z28</h3>
-            <p>Factory Spec Restoration</p>
-            <a href="#camaro">View Case Study →</a>
-          </div>
-        </article>
-      </div>
-    </section>
+      <article class="gallery-card">
+        <img src="images/Mustang.png" alt="1969 Mustang Mach 1" />
+        <div class="gallery-card-body">
+          <h3>1969 Mustang Mach 1</h3>
+          <p>Pro‑Touring Build</p>
+          <a href="#mach1">View Case Study →</a>
+        </div>
+      </article>
 
-    <!-- CHEVELLE CASE STUDY -->
-    <section class="case-study-section" id="chevelle">
-      <div class="case-study-label">CASE STUDY</div>
-      <h2>1970 Chevelle SS Build</h2>
+      <article class="gallery-card">
+        <img src="images/Camaro.png" alt="1968 Camaro Z28" />
+        <div class="gallery-card-body">
+          <h3>1968 Camaro Z28</h3>
+          <p>Factory Spec Restoration</p>
+          <a href="#camaro">View Case Study →</a>
+        </div>
+      </article>
 
-      <h3>Problem</h3>
-      <p>The client brought in a shell that had been sitting in a field for 20 years. Major rust issues in the floor pans, quarters, and trunk. No drivetrain, interior stripped.</p>
+    </div>
+  </section>
 
-      <h3>Solution</h3>
-      <p>A full frame-off, rotisserie restoration. The goal wasn’t just to restore it, but to build a modern-driving muscle car with classic looks.</p>
+  <!-- ============================
+       CASE STUDIES
+  ============================= -->
 
-      <h3>Process</h3>
-      <p>Started with media blasting to assess the true damage. Replaced all sheet metal from the firewall back. Powder-coated the frame, installed modern QA1 suspension, and dropped in a Chevy Performance 572 big block.</p>
+  <!-- CHEVELLE -->
+  <section class="case-study-section" id="chevelle">
+    <div class="case-study-label">CASE STUDY</div>
+    <h2>1970 Chevelle SS Build</h2>
 
-      <h3>Results</h3>
-      <p>A 700+ horsepower show winner that drives beautifully on the street and tears up the track.</p>
+    <h3>Problem</h3>
+    <p>The client brought in a shell that had been sitting in a field for 20 years. Major rust issues in the floor pans, quarters, and trunk. No drivetrain, interior stripped.</p>
 
-      <h3>Tools/Parts Used</h3>
-      <ul class="case-study-list">
+    <h3>Solution</h3>
+    <p>A full frame-off, rotisserie restoration. The goal wasn’t just to restore it, but to build a modern-driving muscle car with classic looks.</p>
+
+    <h3>Process</h3>
+    <p>Media blasting revealed extensive rust. We replaced all sheet metal from the firewall back, powder-coated the frame, installed QA1 suspension, and dropped in a Chevy Performance 572 big block.</p>
+
+    <h3>Results</h3>
+    <p>A 700+ horsepower show winner that drives beautifully on the street and tears up the track.</p>
+
+    <div class="tools-box">
+      <h3 style="color:var(--red);margin-top:0;">Tools / Parts Used</h3>
+      <ul>
         <li>Chevy Performance 572ci Crate Engine</li>
         <li>Tremec T-56 Magnum 6-Speed</li>
         <li>QA1 Level 3 Handling Suspension Kit</li>
         <li>Wilwood 4-Wheel Disc Brakes</li>
         <li>Vintage Air Gen IV SureFit System</li>
       </ul>
-    </section>
+    </div>
+  </section>
 
-    <!-- MACH 1 CASE STUDY -->
-    <section class="case-study-section" id="mach1">
-      <div class="case-study-label">CASE STUDY</div>
-      <h2>1969 Mustang Mach 1</h2>
+  <!-- MACH 1 -->
+  <section class="case-study-section" id="mach1">
+    <div class="case-study-label">CASE STUDY</div>
+    <h2>1969 Mustang Mach 1</h2>
 
-      <h3>Problem</h3>
-      <p>The owner wanted a modern-driving Mach 1 without losing the classic fastback look. The car had tired suspension, fading paint, and an underpowered 351 that struggled on the highway.</p>
+    <h3>Problem</h3>
+    <p>The owner wanted a modern-driving Mach 1 without losing the classic fastback look. The car had tired suspension, fading paint, and an underpowered 351.</p>
 
-      <h3>Solution</h3>
-      <p>We designed a full pro‑touring build: modern suspension, upgraded braking, a stroked 408W small block, and a complete interior refresh while keeping the original Mach 1 styling cues.</p>
+    <h3>Solution</h3>
+    <p>We designed a full pro‑touring build: modern suspension, upgraded braking, a stroked 408W small block, and a complete interior refresh.</p>
 
-      <h3>Process</h3>
-      <p>We stripped the car to the shell, reinforced the chassis, and installed a full coilover suspension system. The engine was replaced with a 408 stroker paired with a TKO 5‑speed. The interior received new upholstery, gauges, and sound deadening.</p>
+    <h3>Process</h3>
+    <p>We stripped the car to the shell, reinforced the chassis, installed coilovers, swapped in a 408 stroker, and refreshed the interior with new upholstery and gauges.</p>
 
-      <h3>Results</h3>
-      <p>The Mach 1 now drives like a modern performance car — tight steering, strong braking, and over 500 horsepower on tap.</p>
+    <h3>Results</h3>
+    <p>The Mach 1 now drives like a modern performance car — tight steering, strong braking, and over 500 horsepower.</p>
 
-      <h3>Tools/Parts Used</h3>
-      <ul class="case-study-list">
+    <div class="tools-box">
+      <h3 style="color:var(--red);margin-top:0;">Tools / Parts Used</h3>
+      <ul>
         <li>Ford 408W Stroker Engine</li>
         <li>TKO 600 5‑Speed Transmission</li>
         <li>Ridetech Coilover Suspension</li>
         <li>Wilwood 6‑Piston Front Brakes</li>
         <li>Classic Instruments Gauge Set</li>
       </ul>
-    </section>
+    </div>
+  </section>
 
-    <!-- CAMARO CASE STUDY -->
-    <section class="case-study-section" id="camaro">
-      <div class="case-study-label">CASE STUDY</div>
-      <h2>1968 Camaro Z28</h2>
+  <!-- CAMARO -->
+  <section class="case-study-section" id="camaro">
+    <div class="case-study-label">CASE STUDY</div>
+    <h2>1968 Camaro Z28</h2>
 
-      <h3>Problem</h3>
-      <p>The client wanted a factory‑correct Z28 restoration suitable for shows and auctions. The car had mismatched parts, incorrect paint codes, and a non‑original interior.</p>
+    <h3>Problem</h3>
+    <p>The client wanted a factory‑correct Z28 restoration suitable for shows and auctions. The car had mismatched parts and incorrect paint codes.</p>
 
-      <h3>Solution</h3>
-      <p>We performed a meticulous factory‑spec restoration, sourcing date‑correct components and restoring the car to its original Le Mans Blue with white stripes.</p>
+    <h3>Solution</h3>
+    <p>We performed a meticulous factory‑spec restoration, sourcing date‑correct components and restoring the car to its original Le Mans Blue.</p>
 
-      <h3>Process</h3>
-      <p>We decoded the trim tag, verified drivetrain numbers, and sourced correct DZ‑302 components. The body was stripped and repainted in its original color. The interior was rebuilt using OEM‑style materials and patterns.</p>
+    <h3>Process</h3>
+    <p>We decoded the trim tag, verified drivetrain numbers, sourced correct DZ‑302 components, and repainted the car in its original color.</p>
 
-      <h3>Results</h3>
-      <p>The finished Z28 scored 97/100 at its first judged event and is now considered one of the cleanest examples in the region.</p>
+    <h3>Results</h3>
+    <p>The finished Z28 scored 97/100 at its first judged event and is now considered one of the cleanest examples in the region.</p>
 
-      <h3>Tools/Parts Used</h3>
-      <ul class="case-study-list">
+    <div class="tools-box">
+      <h3 style="color:var(--red);margin-top:0;">Tools / Parts Used</h3>
+      <ul>
         <li>GM DZ‑302 Engine Components</li>
-        <li>Correct 4‑Speed Muncie Transmission</li>
+        <li>Muncie 4‑Speed Transmission</li>
         <li>OEM‑Style Interior Kit</li>
         <li>Factory‑Correct Le Mans Blue Paint</li>
         <li>Rally Wheels + Goodyear Polyglas Tires</li>
       </ul>
-    </section>
-
-    <div class="pagination">
-      <button class="page-btn" id="prev">← Previous</button>
-      <button class="page-btn" id="next">Next →</button>
     </div>
-  </main>
+  </section>
 
+  <!-- PAGINATION -->
+  <div class="pagination">
+    <button class="page-btn" id="prev">← Previous</button>
+    <button class="page-btn" id="next">Next →</button>
+  </div>
+
+  <!-- BACK TO TOP -->
   <button id="backToTop">↑</button>
 
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container footer-inner">
+
       <div class="footer-col">
         <h4>MuscleCars</h4>
         <p>Restorations, custom builds, and maintenance for classic and modern muscle cars.</p>
       </div>
+
       <div class="footer-col">
         <h4>Quick Links</h4>
         <a href="portfolio.html">Portfolio</a><br />
@@ -160,14 +181,22 @@
         <a href="about.html">About</a><br />
         <a href="request-quote.html">Contact</a>
       </div>
+
       <div class="footer-col">
         <h4>Contact</h4>
-        <p>Detroit, MI<br />(555) 123-4567<br />info@musclecarsgarage.com</p>
+        <p>Detroit, MI<br />(555) 123‑4567<br />info@musclecarsgarage.com</p>
       </div>
+
     </div>
-    <p style="text-align:center; margin-top:16px; font-size:14px; color:#9CA3AF;">© 2026 MuscleCars Garage. All rights reserved.</p>
+
+    <p style="text-align:center;margin-top:16px;font-size:14px;color:#9CA3AF;">
+      © 2026 MuscleCars Garage. All rights reserved.
+    </p>
   </footer>
 
+  <!-- ============================
+       JAVASCRIPT
+  ============================= -->
   <script>
     // Fade-in animation
     const caseStudies = document.querySelectorAll('.case-study-section');
@@ -228,5 +257,6 @@
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   </script>
+
 </body>
 </html>
